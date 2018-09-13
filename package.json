@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/basd1995/biz-Pine/issues"
   },
-  "homepage": "https://github.com/basd1995/biz-Pine#readme"
+  "homepage": "https://github.com/basd1995/biz-Pine#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
 }
