@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         *{margin: 0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-        :root{
+        html{
             --button-height: 32px;
             --font-size: 14px;
             --button-bg: #fff;
@@ -27,37 +27,13 @@
         }
     </style>
     <style>
-        .p-button{
-            padding: 0 1em;
-            font-size: var(--font-size);
-            height: var(--button-height);
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
-            background: var(--button-bg);
-            color: var(--color);
-        }
-        .p-button:hover{
-            border-color: var(--border-color-hover);
-            color: var(--color-hover);
-        }
-        .p-button:active{
-            background: var(--button-active-bg);
-        }
-        .p-button:focus{
-            outline: none;
-        }
+
     </style>
 </head>
 <body>
 <div id="app">
     <p-button></p-button>
 </div>
-<script src="./node_modules/vue/dist/vue.min.js"></script>
-<script src="./button.js"></script>
-<script>
-    new Vue({
-        el: '#app'
-    })
-</script>
+<script src="./src/app.js"></script>
 </body>
 </html>

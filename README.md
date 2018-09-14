@@ -1,4 +1,4 @@
 # biz-pine-ui
-## 作者：barry.cao
-## 请使用border-box，兼容IE8
+### 作者：barry.cao
+### 请使用border-box，兼容IE8
 
