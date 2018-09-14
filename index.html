@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+        :root{
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: #fff;
+            --button-active-bg: #eee;
+            --border-radius: 6px;
+            --color: #999;
+            --color-hover: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        #app{
+            margin: 20px;
+        }
+        body{
+            font-size: var(--font-size);
+        }
+    </style>
+    <style>
+        .p-button{
+            padding: 0 1em;
+            font-size: var(--font-size);
+            height: var(--button-height);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            background: var(--button-bg);
+            color: var(--color);
+        }
+        .p-button:hover{
+            border-color: var(--border-color-hover);
+            color: var(--color-hover);
+        }
+        .p-button:active{
+            background: var(--button-active-bg);
+        }
+        .p-button:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p-button></p-button>
+</div>
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="./button.js"></script>
+<script>
+    new Vue({
+        el: '#app'
+    })
+</script>
+</body>
+</html>
