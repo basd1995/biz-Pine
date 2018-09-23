@@ -40,12 +40,13 @@
     <p-button>基本按钮</p-button>
     <p-button icon="setting" :loading="loading1" @click="loading1 = !loading1">设置</p-button>
     <p-button icon="setting" icon-position="right" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
-    <!--<p-icon name="setting"></p-icon>-->
-    <!--<p-icon name="download"></p-icon>-->
-    <!--<p-icon name="good"></p-icon>-->
-    <!--<p-icon name="upload"></p-icon>-->
+    <p-button-group>
+        <p-button icon="left">上一页</p-button>
+        <p-button>更多</p-button>
+        <p-button icon="right">下一页</p-button>
+    </p-button-group>
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_835312_kzs3rx1srw.js"></script>
+<script src="//at.alicdn.com/t/font_835312_e3jc2o71wh.js"></script>
 </body>
 </html>
