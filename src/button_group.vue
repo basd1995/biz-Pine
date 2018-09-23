@@ -4,14 +4,26 @@
     </div>
 </template>
 
-<script></script>
+<script>
+    export default {
+        mounted(){
+           for(let node of this.$el.children){
+               if(node.nodeName.toLowerCase() !== 'button'){
+                   console.error('p-button-group 只接收 p-button 不接收' + node.nodeName.toLowerCase())
+               }
+           }
+        }
+    }
+</script>
 <style lang="scss">
     .p-button-group{
         display: inline-flex;
         vertical-align: middle;
         > .p-button{
             border-radius: 0;
-            margin-right: -1px;
+            &:not(:first-child){
+                margin-left: -1px;
+            }
             &:first-child{
                 border-top-left-radius: var(--border-radius);
                 border-bottom-left-radius: var(--border-radius);
