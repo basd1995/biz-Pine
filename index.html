@@ -38,15 +38,12 @@
 <body>
 <div id="app">
     <p-button>基本按钮</p-button>
-    <p-button icon="setting">设置</p-button>
-    <p-button icon="good">点赞</p-button>
-    <p-button icon="upload">上传</p-button>
-    <p-button icon="download">下载</p-button>
-    <p-button icon="setting" icon-position="right">设置</p-button>
-    <p-icon name="setting"></p-icon>
-    <p-icon name="download"></p-icon>
-    <p-icon name="good"></p-icon>
-    <p-icon name="upload"></p-icon>
+    <p-button icon="setting" :loading="loading1" @click="loading1 = !loading1">设置</p-button>
+    <p-button icon="setting" icon-position="right" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
+    <!--<p-icon name="setting"></p-icon>-->
+    <!--<p-icon name="download"></p-icon>-->
+    <!--<p-icon name="good"></p-icon>-->
+    <!--<p-icon name="upload"></p-icon>-->
 </div>
 <script src="./src/app.js"></script>
 <script src="//at.alicdn.com/t/font_835312_kzs3rx1srw.js"></script>
