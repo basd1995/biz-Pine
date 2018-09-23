@@ -10,7 +10,11 @@
 </template>
 
 <script>
+    import Icon from './icon'
     export default {
+        components:{
+          'p-icon': Icon
+        },
         props:{
             icon:{},
             loading:{
