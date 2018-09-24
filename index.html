@@ -34,18 +34,32 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .box{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <p-button>基本按钮</p-button>
-    <p-button icon="setting" :loading="loading1" @click="loading1 = !loading1">设置</p-button>
-    <p-button icon="setting" icon-position="right" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
-    <p-button-group>
-        <p-button icon="left">上一页</p-button>
-        <p-button>更多</p-button>
-        <p-button icon="right" icon-position="right">下一页</p-button>
-    </p-button-group>
-    <div id="test"></div>
+    <div class="box">
+        <p-input value="张三"></p-input>
+        <p-input value="李四" readonly=""></p-input>
+        <p-input value="王五" disabled></p-input>
+    </div>
+    <div class="box">
+        <p-input value="王" error="姓名不能少于两个字"></p-input>
+    </div>
+    <div class="box" style="margin-top: 20px">
+        <p-button>基本按钮</p-button>
+        <p-button icon="setting" :loading="loading1" @click="loading1 = !loading1">设置</p-button>
+        <p-button icon="setting" icon-position="right" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
+        <p-button-group>
+            <p-button icon="left">上一页</p-button>
+            <p-button>更多</p-button>
+            <p-button icon="right" icon-position="right">下一页</p-button>
+        </p-button-group>
+    </div>
 </div>
 <script src="./src/app.js"></script>
 </body>
