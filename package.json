@@ -1,6 +1,6 @@
 {
   "name": "pineui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "pineUI",
   "main": "dist/index.js",
   "scripts": {
