@@ -1,5 +1,17 @@
-# 松柏
--
-- 作者：barry.cao
-- 请使用border-box，兼容IE8
+# Pine - 一个 Vue UI 组件
+
+[![Build Status](https://travis-ci.com/basd1995/biz-Pine.svg?branch=master)](https://travis-ci.com/basd1995/biz-Pine)
+## 介绍
+
+## 开始使用
+
+## 文档
+
+## 提问
+
+## 变更记录
+
+## 联系方式
+
+## 贡献代码
 
