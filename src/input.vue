@@ -33,14 +33,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    /*--button-height: 32px;*/
-    /*--font-size: 14px;*/
-    /*--button-bg: #fff;*/
-    /*--button-active-bg: #eee;*/
-    /*--border-radius: 6px;*/
-    /*--color: #333;*/
-    /*--border-color: #999;*/
-    /*--border-color-hover: #666;*/
     $height: 32px;
     $font-size: 12px;
     $border-radius: 4px;

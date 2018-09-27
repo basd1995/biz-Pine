@@ -1,5 +1,5 @@
 <template>
-    <svg class="p-icon">
+    <svg class="p-icon" :style="{ fill: color , width: size + 'em' , height: size + 'em'}">
         <use :xlink:href="`#i-${name}`"></use>
     </svg>
 </template>
@@ -7,9 +7,20 @@
     import './svg'
     export default {
         name:'PineIcon',
-        props:['name']
+        props:{
+            name:{
+                type: String
+            },
+            color:{
+                type: String
+            },
+            size:{
+                type: Number,
+                default: 1
+            }
+        }
     }
 </script>
 <style lang="scss" scoped>
-    .p-icon {width: 1em;height: 1em;}
+    .p-icon {vertical-align: middle;}
 </style>
