@@ -31,7 +31,7 @@ describe('Button组件', () => {
         const useElements = vm.$el.querySelectorAll('use')
         expect(useElements.length).to.equal(1)
         expect(useElements[0].getAttribute('xlink:href')).to.equal('#i-loading')
-        vm.$destroy()
+        vm.$destroy();
     })
     it('icon 默认的 order 是 1', () => {
         const div = document.createElement('div')
