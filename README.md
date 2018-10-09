@@ -4,9 +4,7 @@
 ## 介绍
 
 ## 开始使用
- IE get out!!!!!!!!!!!
- Opera Mini get out!!!!!!!!!!!!
- f**k IE and Opera Mini
+
 ## 文档
 
 ## 提问
