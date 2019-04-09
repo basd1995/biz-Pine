@@ -42,9 +42,28 @@
 </head>
 <body>
 <div id="app">
+    <p-row>
+        <p-col>1</p-col>
+        <p-col>2</p-col>
+    </p-row>
+    <p-row>
+        <p-col>1</p-col>
+        <p-col>2</p-col>
+        <p-col>3</p-col>
+    </p-row>
+    <p-row>
+        <p-col>1</p-col>
+        <p-col>2</p-col>
+        <p-col>3</p-col>
+        <p-col>4</p-col>
+    </p-row>
+    <p-row>
+        <p-col span="2">1</p-col>
+        <p-col span="22">2</p-col>
+    </p-row>
+    <hr>
     <div class="box">
-        <p-input v-model="message"></p-input>
-        <p>{{message}}</p>
+        <p-input></p-input>
         <p-input value="李四" readonly></p-input>
         <p-input value="王五" disabled></p-input>
     </div>
