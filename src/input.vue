@@ -1,16 +1,21 @@
 <template>
     <div class="wrapper" :class="{error}">
-        <input :value="value" type="text" :disabled="disabled" :readonly="readonly">
+        <input :value="value" type="text" :disabled="disabled" :readonly="readonly"
+            @change="$emit('change', $event)"
+            @input="$emit('input', $event)"
+            @focus="$emit('focus', $event)"
+            @blur="$emit('blur', $event)"
+        >
         <template v-if="error">
             <p-icon name="error" class="errorIcon"></p-icon>
-            <span>{{error}}</span>
+            <span class="errorMessage">{{error}}</span>
         </template>
     </div>
 </template>
 <script>
 import Icon from './icon'
 export default {
-    comments:{
+    components:{
       'p-icon':Icon
     },
     name:'PineInput',
@@ -50,7 +55,7 @@ export default {
         }
         &.error{
             > input{border-color: $red;}
-            > span{color:$red;}
+            > .errorMessage{color:$red;}
         }
         .errorIcon{fill: $red;}
     }

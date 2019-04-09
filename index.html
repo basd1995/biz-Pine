@@ -50,19 +50,18 @@
     <div class="box">
         <p-input value="王" error="姓名不能少于两个字"></p-input>
     </div>
+    <div class="box">
+        <p-input value="王" @change="inputChange"></p-input>
+    </div>
     <div class="box" style="margin-top: 20px">
         <p-button>基本按钮</p-button>
         <p-button icon="setting" :loading="loading1" @click="loading1 = !loading1">设置</p-button>
-        <p-button icon="setting" icon-position="fwefwef" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
+        <p-button icon="setting" icon-position="right" :loading="loading2" @click="loading2 = !loading2">设置</p-button>
         <p-button-group>
             <p-button icon="left">上一页</p-button>
             <p-button>更多</p-button>
             <p-button icon="right" icon-position="right">下一页</p-button>
         </p-button-group>
-    </div>
-    <div>
-        <p-icon name="error" color="red" :size=3></p-icon>
-        你好啊
     </div>
 
 </div>
