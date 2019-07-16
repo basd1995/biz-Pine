@@ -61,9 +61,19 @@
         <p-col span="2">1</p-col>
         <p-col span="22">2</p-col>
     </p-row>
+    <p-row>
+        <p-col span="2">1</p-col>
+        <p-col span="20" offset="2">2</p-col>
+    </p-row>
+    <p-row>
+        <p-col span="4">1</p-col>
+        <p-col span="2" offset="2">1</p-col>
+        <p-col span="20" offset="2">2</p-col>
+    </p-row>
     <hr>
     <div class="box">
-        <p-input></p-input>
+        <p-input v-model="message"></p-input>
+        <p>{{message}}</p>
         <p-input value="李四" readonly></p-input>
         <p-input value="王五" disabled></p-input>
     </div>
